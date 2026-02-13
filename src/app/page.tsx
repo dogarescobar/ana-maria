@@ -15,7 +15,7 @@ export default function Home() {
               AM
             </div>
             <div className="leading-tight">
-              <div className="font-semibold">AM Movilidad &amp; Longevidad</div>
+            <div className="font-semibold">AM Movilidad & Longevidad (PRUEBA)</div>
               <div className="text-xs text-slate-600">
                 Fisioterapia a domicilio · Bogotá Norte
               </div>

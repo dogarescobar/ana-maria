@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand */
+  --brand: #0b1f3a;
+  --brand-soft: #3a6ea5;
+  --accent: #7fb069;
+
+  /* Base */
+  --background: #f5f7fa;
+  --foreground: #0f172a;
+
+  /* UI */
+  --card: #ffffff;
+  --border: #e6edf5;
+  --muted: #94a3b8;
+
+  /* Radius & shadows */
+  --radius: 16px;
+  --shadow-soft: 0 10px 30px rgba(11, 31, 58, 0.10);
+  --shadow-card: 0 8px 20px rgba(11, 31, 58, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+/* Container ancho premium */
+.container-am {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+/* Cards premium */
+.card-am {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+/* Botón primario */
+.btn-primary-am {
+  background: var(--brand-soft);
+  color: white;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+.btn-primary-am:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
