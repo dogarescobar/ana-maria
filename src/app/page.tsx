@@ -11,9 +11,15 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white font-bold">
-              AM
-            </div>
+          <div
+  className="flex h-10 w-10 items-center justify-center rounded-xl text-white font-bold"
+  style={{ background: "var(--brand)" }}
+>
+  AM
+</div>
+ 
+              
+            
             <div className="leading-tight">
             <div className="font-semibold">AM Movilidad & Longevidad (PRUEBA)</div>
               <div className="text-xs text-slate-600">
